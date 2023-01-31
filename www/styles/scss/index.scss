@@ -1,0 +1,153 @@
+// vars
+$fontDark: #25325D;
+
+// commn
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'gilroy';
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0px auto;
+    padding: 0px 20px;
+    width: 100%;
+    max-width: 1840px;
+}
+
+.options {
+    display: none;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    color: $fontDark;
+    margin-top: 0;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 74px;
+    color: $fontDark;
+    margin: 0;
+}
+
+p {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: $fontDark;
+    margin-bottom: 0;
+}
+
+.wheelScreen{
+
+    background: url(../../img/bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__text {
+        padding-top: 210px;
+    }
+}
+
+.wheel {
+    position: relative;
+    margin-left: 30px;
+    width: 780px;
+    aspect-ratio: 1 / 1;
+}
+
+#wheel__canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#wheel__adornment {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#wheel__adornment2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+#spinButton {
+    display: grid;
+    place-items: center;
+    width: 140px;
+    height: 140px;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(50% 50% at 50% 50%, #E14040 0%, #D13535 100%);
+    color: #fff;
+    border-radius: 50%;
+    /* border-radius: 30px; */
+    border: 17px solid #FFC554;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 31px;
+    text-transform: uppercase;
+    /* box-sizing: content-box; */
+}
+
+.completeScreen {
+
+    background: url(../../img/bg-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &__wrap {
+        max-width: 1800px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 210px;
+    }
+
+    &__text {
+        padding-top: 210px;
+        
+    }
+
+    &__img {
+        aspect-ratio: 1 / 1;
+        img {
+            width: 100%;
+
+        }
+    }
+}

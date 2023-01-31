@@ -1,0 +1,134 @@
+@media screen and (max-width: 1620px) {
+  h2 {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .wheel {
+    width: 680px;
+    height: 680px;
+  }
+  .completeScreen__img {
+    width: 680px;
+    height: 680px;
+  }
+  .completeScreen__text {
+    padding-top: 100px;
+  }
+  .wheelScreen__text {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .wheelScreen__wrap,
+.completeScreen__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wheelScreen__text,
+.completeScreen__text {
+    max-width: 900px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .completeScreen__img {
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+  }
+  .wheel {
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+  h2 br {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+  h1 br {
+    display: none;
+  }
+  p {
+    text-align: center;
+  }
+  p br {
+    display: none;
+  }
+  .wheelScreen__wrap,
+.completeScreen__wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #spinButton {
+    width: 110px;
+    height: 110px;
+    border-width: 10px;
+    font-size: 22px;
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  p {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  .wheelScreen__text,
+.completeScreen__text {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  #spinButton {
+    width: 70px;
+    height: 70px;
+    border-width: 6px;
+    font-size: 16px;
+  }
+  .wheelScreen__wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
