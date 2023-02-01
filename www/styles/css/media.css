@@ -66,13 +66,13 @@
     background-position: center, center;
     
     background-size:contain, auto;
-
   }
+  
   .wheelScreen__text {
     display: none;
   }
-    .heelScreen__wheel {
-    
+    .wheelScreen__wheel {
+    transform: translateX(50px);
   }
   .wheelScreen__wheel::after {
     display: none;
@@ -81,6 +81,10 @@
     padding-top: 500px;
     padding-bottom: 100px;
   }
+  .content {
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
   #spinButton {
     font-size: 0;
     
