@@ -67,8 +67,8 @@
     
     background-size:contain, auto;
     overflow-x: hidden;
- 
   }
+  
   .wheelScreen__text {
     display: none;
   }
@@ -83,6 +83,10 @@
     padding-top: 500px;
     padding-bottom: 100px;
   }
+  .content {
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
   #spinButton {
     font-size: 0;
     
