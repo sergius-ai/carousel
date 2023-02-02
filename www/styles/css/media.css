@@ -3,8 +3,32 @@
     font-size: 46px;
     line-height: 60px;
   }
+  .valentine-icon {
+    background-size: cover;
+    background: url(../../img/valentine02.png);
+    background-repeat: no-repeat;
+    height: 590px;
+    background-size: contain;
+    width: 700px;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
 }
 @media screen and (max-width: 1400px) {
+  .valentine-icon {
+    background-size: cover;
+    background: url(../../img/valentine02.png);
+    background-repeat: no-repeat;
+    height: 540px;
+    background-size: contain;
+    width: 510px;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 60%;
+}
   
   .wheel {
     width: 680px;
@@ -22,306 +46,204 @@
   }
 }
 @media screen and (max-width: 1280px) {
- 
-  h2 {
-    font-size: 60px;
-    line-height: 70px;
-  }
-  .wheelScreen__wrap,
-.completeScreen__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .wheelScreen__text,
-.completeScreen__text {
-    max-width: 900px;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 50px;
-  }
-  .completeScreen__img {
-    width: 100%;
-    max-width: 880px;
-    height: auto;
-  }
-  .wheel {
-    width: 100%;
-    max-width: 880px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 800px) {
-  body,
-  html {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    height: 100%;
-    background-image: url("../../img/bg-elg_mob.svg"), url("../../img/bg-1_mob.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
-    
-    background-size:contain, auto;
-    overflow-x: hidden;
-  }
-  
-  .wheelScreen__text {
-    display: none;
-  }
-  .wheelScreen__wheel {
-    transform: translateX(50px);
-    bottom: 100px;
-    position: fixed;
-    margin-bottom: 100px;
-  }
-  .wheelScreen__wheel::after {
-    display: none;
-  } 
-  .completeScreen__wrap {
-    padding-top: 500px;
-    padding-bottom: 100px;
-  }
-  .content {
-    overflow-x: hidden;
-    padding-bottom: 60px;
+    max-height: 100px;
 }
-  #spinButton {
-    font-size: 0;
-    
-    background: #25325D;
-    background-image: url(../../img/logo_mob.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 
+  img.header__icon.icon-heart, img.header__icon.icon-love{
+    display: none;
   }
-  #spinButton::after {
-    content: 'ПРОКРУТИТИ КОЛЕСО';
-    background: #FFB424;
-    border-radius: 120px;
-    width: 600%;
-    height: 150px;
-    right: -200px;
-    display: block;
-    position: fixed;
-    top: 300px;
-    transform: rotate(15deg);
 
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  img.header__icon.icon-logo{
+    max-width: 200px;
+    margin-left: 112px;
+    margin-top: 88px;
+  }
+ 
+  .wrap.wheelScreen__wrap {
+    flex-direction: column;
+}
+
+.wheelScreen__text h2{
+  display: none;
+}
+
+.wheelScreen__text {
+  display: block;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: -60px;
+  z-index: 5;
+}
+
+.valentine-icon {
+  bottom: 0;
+  background-size: cover;
+  background: url(../../img/valentine02.png);
+  background-repeat: no-repeat;
+  height: 540px;
+  background-size: contain;
+  width: 100%;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+
+img.header__icon.icon-heart.icon-heart-mobile {
+  display: block;
+  position: absolute;
+  max-width: 240px;
+  bottom: -50px;
+  right: 0;
+}
+#spinButton::after {
+  content: 'ПРОКРУТИТИ КОЛЕСО';
+  background: #FFB424;
+  border-radius: 120px;
+  width: 600%;
+  height: 150px;
+  right: -200px;
+  display: block;
+  position: fixed;
+  top: 300px;
+  transform: rotate(15deg);
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #25325D;
+}
+
+.wheelScreen__wheel::after{
+  display: none;
+}
+img.header__icon.icon-love.icon-love-mobile {
+  display: block;
+  max-height: 250px;
+  margin-right: 0;
+  z-index: 5;
+  margin-left: 37px;
+  margin-bottom: 20px;
+}
+
+.wheelScreen__wrap{
+  margin-bottom: 0;
+}
+
+}
+@media screen and (max-width: 800px) {
+  html {
+    background-image: url("../../img/bg-elg_mob.svg"), url("../../img/bg-1_mob.png");
+  }
   
-    color: #25325D;
-  }
-  h2 {
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-  }
-  h2 br {
-    display: none;
-  }
-  h1 {
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-  }
-  h1 br {
-    display: none;
-  }
-  p {
-    text-align: center;
-  }
-  p br {
-    display: none;
-  }
-  .wheelScreen__wrap,
-.completeScreen__wrap {
-    padding-top: 500px;
-    padding-bottom: 50px;
-  }
-  .wheelScreen__wheel::after {
-    display: none;
-  }
 }
 @media screen and (max-width: 680px) {
-  body,
-  html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-image: url("../../img/bg-elg_mob.svg"), url("../../img/bg-1_mob.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
 
-  background-size: contain, auto;
-  overflow-x: hidden;
-  }
 
-  .wheelScreen__text {
-    display: none;
-  }
-
-  .wheelScreen__wheel {
-    transform: translateX(50px);
-    position: fixed;
-    bottom: 100px;
-    
-  }
 
   .wheelScreen__wheel::after {
     display: none;
   }
+  .wheel {
+    width: 560px;
+    height: 560px;
+}
 
-  .completeScreen__wrap {
-    padding-top: 500px;
-    padding-bottom: 100px;
-  }
-
-  .content {
-    overflow-x: hidden;
-    padding-bottom: 60px;
-  }
-
-  #spinButton {
-    font-size: 0;
-
-    background: #25325D;
-    background-image: url(../../img/logo_mob.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #spinButton::after {
+#spinButton::after {
     content: 'ПРОКРУТИТИ КОЛЕСО';
     background: #FFB424;
     border-radius: 120px;
     width: 500%;
-    height: 100px;
-    right: -150px;
+    height: 120px;
+    right: -130px;
     display: block;
     position: fixed;
-    top: 200px;
+    top: 240px;
     transform: rotate(15deg);
-
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: center;
-
     color: #25325D;
-  }
-  h1 {
-    margin-bottom: 10px;
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  p {
-    font-size: 26px;
-    line-height: 30px;
-    margin-top: 10px;
-  }
-  .wheelScreen__text,
-.completeScreen__text {
-    padding-bottom: 20px;
-  }
+}
+
+body {
+  overflow: hidden;
+}
+
+
 }
 @media screen and (max-width: 480px) {
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    
-    background-image: url("../../img/bg-elg_mob.svg"), url("../../img/bg-1_mob.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
+  #spinButton::after {
+    content: 'ПРОКРУТИТИ КОЛЕСО';
+    background: #FFB424;
+    border-radius: 120px;
+    width: 90vw;
+    height: 100px;
+    right: -80px;
+    display: block;
+    position: fixed;
+    transform: rotate(15deg);
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #25325D;
+}
 
-    background-size: contain, auto;
-    justify-items: center;
-    
-  }
-
-  .wheelScreen__text {
-    display: none;
-  }
 
   .wheelScreen__wheel {
     transform: translateX(50px);
     bottom: 10px;
-    position: fixed;
     
   }
   .wheelScreen__wheel::after {
     display: none;
   }
-
-  #spinButton {
-    font-size: 0;
-    background: #25325D;
-    background-image: url(../../img/logo_mob.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #spinButton::after {
-    content: 'ПРОКРУТИТИ КОЛЕСО';
-    background: #FFB424;
-    border-radius: 120px;
-    width: 700%;
-    height: 70px;
-    right: -100px;
+  img.header__icon.icon-heart.icon-heart-mobile {
     display: block;
-    position: fixed;
-    transform: rotate(15deg);
-    margin-top:-50px;
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
+    position: absolute;
+    max-width: 170px;
+    bottom: 30px;
+    right: 0;
+}
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-    color: #25325D;
-  }
-  h1 {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 10px;
-  }
-  h2 {
-    font-size: 18px;
-    line-height: 20px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 20px;
-  }
-  #spinButton {
-    width: 70px;
-    height: 70px;
-    border-width: 6px;
-    font-size: 0;
-  }
+img.header__icon.icon-love.icon-love-mobile {
+  display: block;
+  max-height: 180px;
+  margin-right: 0;
+  z-index: 5;
+  margin-left: 37px;
+  margin-bottom: 20px;
+  margin-top: -60px;
+  position: relative;
+} 
 
 }

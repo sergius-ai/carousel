@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +13,25 @@
   <script src="./plugins/TweenMax.min.js"></script>
   <script src="./plugins/Winwheel.min.js"></script>
 </head>
+
 <body>
-  
+
   <div class="content">
+    <div class="header__container">
+      <img src="./img/logo.png" alt="logo" class="header__icon icon-logo">
+      <img src="./img/love.png" alt="love" class="header__icon icon-love">
+      <img src="./img/heart.png" alt="heart" class="header__icon icon-heart">
+    </div>
     <div class="">
       <div class="wrap wheelScreen__wrap">
         <div class="wheelScreen__text">
           <!--<h1>Дякуємо за--> <br><!--замовлення!</h1>-->
-          <h2>Прокрути колесо і <br> отримай <span>гарантований</span> <br> <span> подарунок</span> до свого <br> замовлення</h2>
+          <h2>Прокрути колесо і <br> отримай <span>гарантований</span> <br> <span> подарунок</span> до свого <br>
+            замовлення</h2>
+
+            <div class="valentine-icon"></div>
+        <img src="./img/heart.png" alt="heart" class="header__icon icon-heart icon-heart-mobile">
+
         </div>
 
         <div class="wheel rotating wheelScreen__wheel">
@@ -34,12 +46,15 @@
           <canvas id='wheel__adornment2' width='880' height='880'>
             Canvas not supported, use another browser.
           </canvas>
-          
+
           <button id="spinButton">spin</button>
         </div>
-    
       </div>
+      <img src="./img/love.png" alt="love" class="header__icon icon-love icon-love-mobile">
+
+      
     </div>
+
   </div>
 
   <div class="options">
@@ -54,7 +69,8 @@
     <span data-rate="10" data-pos="9" data-fill="yellow">Парфюм <br> Pretty Woman 10 ml</span>
     <span data-rate="10" data-pos="10" data-fill="white">Парфюм <br> Pretty Woman 10 ml</span>
   </div>
-  
+
   <script src="./js/index.js"></script>
 </body>
+
 </html>
