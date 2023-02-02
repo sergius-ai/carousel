@@ -75,6 +75,8 @@
   .wheelScreen__wheel {
     transform: translateX(50px);
     bottom: 100px;
+    position: fixed;
+    margin-bottom: 100px;
   }
   .wheelScreen__wheel::after {
     display: none;
@@ -172,6 +174,8 @@
 
   .wheelScreen__wheel {
     transform: translateX(50px);
+    position: fixed;
+    bottom: 100px;
     
   }
 
@@ -245,12 +249,13 @@
   html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    
     background-image: url("../../img/bg-elg_mob.svg"), url("../../img/bg-1_mob.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
 
     background-size: contain, auto;
+    justify-items: center;
     
   }
 
@@ -260,42 +265,32 @@
 
   .wheelScreen__wheel {
     transform: translateX(50px);
-    bottom: 100px;
+    bottom: 10px;
+    position: fixed;
+    
   }
   .wheelScreen__wheel::after {
     display: none;
   }
-  .completeScreen__wrap {
-    padding-top: 500px;
-  }
-
-  .content {
-    overflow-x: hidden;
-    padding-bottom: 60px;
-  }
 
   #spinButton {
     font-size: 0;
-
     background: #25325D;
     background-image: url(../../img/logo_mob.svg);
     background-repeat: no-repeat;
     background-position: center;
-
   }
-
   #spinButton::after {
     content: 'ПРОКРУТИТИ КОЛЕСО';
     background: #FFB424;
     border-radius: 120px;
     width: 700%;
-    height: 100px;
+    height: 70px;
     right: -100px;
     display: block;
     position: fixed;
-    top: 400px;
     transform: rotate(15deg);
-
+    margin-top:-50px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 900;
@@ -326,10 +321,7 @@
     width: 70px;
     height: 70px;
     border-width: 6px;
-    font-size: 16px;
+    font-size: 0;
   }
-  .wheelScreen__wrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+
 }
